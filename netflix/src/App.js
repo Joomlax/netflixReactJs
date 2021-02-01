@@ -2,12 +2,16 @@ import React, { Component } from "react";
 import Row from "./Row";
 import requests from "./requests";
 import "./App.css";
+import Banner from "./Banner";
+
 export default class App extends Component {
   render() {
     return (
-      <div>
+      <div className="app">
+        <Banner />
+        {/*Banner */}
         <Row
-          title="NETFILIX ORGIGINALS"
+          title="NETFLIX ORGIGINALS"
           fetchUrl={requests.fetchNetflixOriginals}
           isLargeRow
         />
