@@ -3,11 +3,13 @@ import Row from "./Row";
 import requests from "./requests";
 import "./App.css";
 import Banner from "./Banner";
+import Nav from "./Nav";
 
 export default class App extends Component {
   render() {
     return (
       <div className="app">
+        <Nav />
         <Banner />
         {/*Banner */}
         <Row
